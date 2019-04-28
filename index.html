@@ -30,7 +30,8 @@
           <div class="row">
             <div class="col-12">
               <h4 class="font-weight-bold text-white"><i class="fas fa-clock"></i> For destination specific timetables see the table below. <i class="fas fa-clock"></i></h4>
-            </div>
+              <div id="clock" class="text-white"></div>
+            </div>            
           </div>
         </div>
       </div>
@@ -42,89 +43,19 @@
                       <h3 class="card-title text-white">Current Trains Schedule</h3>  
                   </div>
                   <div class="card-body">
-                    <table class="table table-striped">
+                    <table class="table table-striped" id="train-table">
                         <thead>
                           <tr>
-                            <!-- <th scope="col">#</th> -->
                             <th scope="col">Train Name</th>
                             <th scope="col">Destination</th>
                             <th scope="col">Frequency (min)</th>
                             <th scope="col">Next Arrival</th>
                             <th scope="col">Minutes Away</th>
-                            <!-- <th scope="col">Total Billed ($)</th> -->
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            
-                            <td>Metrolink</td>
-                            <td>Charlotte</td>
-                            <td>01/05/2019</td>
-                            <td>40</td>
-                            <td>50</td>
-                            
-                          </tr>
-                          <tr>
-                            
-                            <td>Tri-Rail</td>
-                            <td>Miami</td>
-                            <td>01/05/2019</td>
-                            <td>40</td>
-                            <td>50</td>
-                            
-                          </tr>
-                          <tr>
-                            
-                            <td>Amtrak</td>
-                            <td>Orlando</td>
-                            <td>01/05/2019</td>
-                            <td>40</td>
-                            <td>50</td>
-                            
-                          </tr>
-                          <tr>
-                            
-                            <td>BNSF Railway</td>
-                            <td>Long Island</td>
-                            <td>01/05/2019</td>
-                            <td>40</td>
-                            <td>50</td>
-                            
-                          </tr>
-                          <tr>
-                            <td>Inter-American</td>
-                            <td>Indianapolis</td>
-                            <td>01/05/2019</td>
-                            <td>40</td>
-                            <td>50</td>
-                            
-                          </tr>
-                          <tr>
-                            <td>Inter-State Limited</td>
-                            <td>New Jersey</td>
-                            <td>01/05/2019</td>
-                            <td>40</td>
-                            <td>50</td>
-                            
-                          </tr>
-                          <tr>
-                            <td>Interstate Express</td>
-                            <td>Boston</td>
-                            <td>01/05/2019</td>
-                            <td>40</td>
-                            <td>50</td>
-                            
-                          </tr>
-                          <tr>
-                            <td>Mid-City Express</td>
-                            <td>Atlanta</td>
-                            <td>01/05/2019</td>
-                            <td>40</td>
-                            <td>50</td>
-                            
-                          </tr>
-                        </tbody>
+                        <tbody id = "train-schedule-body"></tbody>
                       </table>
+            
                   </div>
                   
               </div>
